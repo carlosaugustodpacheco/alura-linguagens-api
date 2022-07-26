@@ -56,7 +56,33 @@ Com parametros no "Body" como exemplo abaixo:
         "ranking": 5
     }
 ```
-    
+
+#### Subindo para Cloud Heroku
+Para subir para o Heroku é necessario ter uma conta ativa no [Heroku](https://dashboard.heroku.com/apps) e instalar em sua maquina, no terminal dentro da pasta do projeto:
+```
+npm install -g heroku
+```
+Fazer os procedimentos de logar e adicionar a pasta do projeto
+```
+heroku login
+```
+```
+heroku git:remote -a carlos-alura-linguagens-api
+```
+Fazer os procedimentos de adicionar, commitar e push do projeto. Após o push será gerado em sua conta um link com o projeto na Cloud.
+```
+git add -A
+```
+```
+git commit -m
+```
+```
+git push heroku
+```
+
+#### Criação de figurinhas
+Caso queira gerar figurinhas a partir do JSON da Web (local ou Heroku), seguir passos do repósitorio [alura-stickers](https://github.com/carlosaugustodpacheco/alura-stickers). Fazendo a alteração do link da String no campo 17 da src/App.js para o novo gerado.
+
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
